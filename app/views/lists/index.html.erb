@@ -3,6 +3,6 @@
 <% @lists.each do |list| %>
 
     <p>タイトル</p>
-    <span><%= list.title %></span>
+    <span><%= list.title, lists_path(list.id) %></span>
 
 <% end %>
